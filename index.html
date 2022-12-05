@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Golf App</title>
+  <script src="/dist/main.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 1rem
+    }
+    main {
+      display: flex;
+    }
+    main > * {
+      flex: 1;
+    }
+    #golfers {
+      background-color: rgb(223, 223, 223);
+      padding: .25rem;
+      padding-bottom: 1.5rem;
+      margin: 3px;
+    }
+    #courses {
+      background-color: rgb(198, 198, 198);
+      padding: .25rem;
+      padding-bottom: 1.5rem;
+      margin: 3px;
+    }
+    #teeSheet {
+      background-color: rgb(44, 44, 44);
+      color: white;
+      padding: .25rem;
+      padding-bottom: 1.5rem;
+      margin: 3px;
+    }
+    .selected {
+      background-color: rgb(255, 166, 0);
+      width: 30%;
+      border-radius: .25rem;
+      padding: .2rem;
+    }
+    .selected a {
+      color: white;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+    ul li {
+      padding: .3rem;
+    }
+    button {
+      background-color: rgb(0, 102, 255);
+      color: white;
+    }
+
+    #delete {
+      background-color: rgb(191, 0, 0);
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Golf Booking App</h1>
+  <main>
+    <div>
+      <h2>Golfers</h2>
+      <ul id="golfers">
+      </ul>
+    </div>
+
+    <div>
+      <h2>Courses</h2>
+      <ul id="courses">
+      </ul>
+    </div>
+
+    <div>
+      <h2>Bookings</h2>
+      <ul id="teeSheet">
+      </ul>
+    </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
